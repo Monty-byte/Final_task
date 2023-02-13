@@ -11,3 +11,20 @@ for (int i = 0; i < size; i++)
 {
     array[i] = Console.ReadLine() ?? "";
 }
+
+
+string[] GetArray(String[] arr)
+{
+    string[] str = new string[arr.GetLength(0)];
+
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        if (arr[i].Length <= 3)
+        {
+            str[i] = arr[i];
+        }
+
+    }
+    return str;
+
+}
