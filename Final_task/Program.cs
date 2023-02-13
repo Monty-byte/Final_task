@@ -13,6 +13,9 @@ for (int i = 0; i < size; i++)
 }
 
 
+string[] newstr = GetArray(array);
+Console.Write("[{0}] -> [{1}]", string.Join(", ", array), string.Join(", ", newstr.Where(s => !string.IsNullOrEmpty(s))));
+
 string[] GetArray(String[] arr)
 {
     string[] str = new string[arr.GetLength(0)];
